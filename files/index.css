@@ -1,7 +1,6 @@
 BODY
 {
 	font-family:Georgia, "Nimbus Roman No9 L", serif;
-	/*background-color:#75B2DD; */ /* Columbia blue */
 	background-color:#AAAAAA; 
 	/*background-image:url("images/texture8.png");*/
 	background-attachment:scroll;
@@ -102,9 +101,7 @@ A {text-decoration:underline; color:inherit;}
 A:hover {
 	text-decoration: underline;
 
-	/*
-	color: http
-://www.cs.columbia.edu/~junfeng/;*/		color: #008080;
+	color: #008080;
 }
 
 .author {font-style:normal;}

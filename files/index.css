@@ -71,7 +71,7 @@ DIV.header
 {
 	font-size: large;
 	font-weight: bold;
-	background: #004080;
+	background: #005080;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 10px;
@@ -84,7 +84,7 @@ DIV.header2
 	font-size:large;
 	padding-left:20px;
 	padding-right:30px;
-    font-weight:bold;
+	font-weight:bold;
 }
 
 DIV.content
@@ -100,7 +100,7 @@ UL {
 A {text-decoration:underline; color:inherit;}
 A:hover {
 	text-decoration: underline;
-	color: #004080;
+	color: #005080;
 }
 
 .author {font-style:normal;}

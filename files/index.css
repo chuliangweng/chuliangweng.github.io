@@ -129,6 +129,15 @@ IMG#portrait
 	-webkit-box-shadow:0px 0px 10px gray;
 }
 
+
+IMG#portrait36
+{
+	width:36%;
+	box-shadow:0px 0px 0px gray;
+	-moz-box-shadow:0px 0px 0px gray;
+	-webkit-box-shadow:0px 0px 0px gray;
+}
+
 IMG.logo
 {
 	float:left;

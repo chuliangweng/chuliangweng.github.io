@@ -1,5 +1,0 @@
-Abstract
-
-Nowadays, GPUs have achieved high throughput computing by running plenty of threads. However, owing to disjoint memory spaces of discrete CPU-GPU systems, exploiting CPU and GPU within a data processing pipeline is a non-trivial issue, which can only be resolved by the coarse-grained workflow of “copy-kernel-copy” or its variants in essence. There is an underlying bottleneck caused by frequent inter-processor invocations for fine-grained batch sizes. The paper presents XeFlow that enables streamlined execution by leveraging hardware mechanisms inside new generation GPUs. XeFlow significantly reduces costly explicit copy and kernel launching within existing fashions. As an alternative, XeFlow introduces persistent operators that continuously process data through shared topics, which establish efficient inter-processor data channels via hardware page faults. Compared with the default “copy-kernel-copy” method, XeFlow shows up to 2.4x ~ 3.1x performance advantages in both coarse-grained and fine-grained pipeline execution. To demonstrate its potentials, this paper also evaluates two GPU-accelerated applications, including data encoding and OLAP query.
-
-

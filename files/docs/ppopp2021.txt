@@ -1,2 +1,2 @@
-Zhifang Li, Mingcong Han, Shangwei Wu, Chuliang Weng. ShadowVM: Accelerating Data Plane for Data Analytics with Bare Metal CPUs and GPUs. The 26th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming (PPoPP'21), 2021, Full paper, Accepted 
+Zhifang Li, Mingcong Han, Shangwei Wu, and Chuliang Weng. ShadowVM: Accelerating Data Plane for Data Analytics with Bare Metal CPUs and GPUs. The 26th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming (PPoPP'21), 2021, Full paper, Accepted 
 

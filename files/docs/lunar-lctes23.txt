@@ -1,0 +1,5 @@
+
+
+Abstract.
+
+Embedded systems have evolved tremendously in recent years. We perform a study on SQLite and find that the multiple layers of abstraction drastically reduce bandwidth utilization. To minimize the bandwidth loss in the I/O path, we propose Lunar, a novel native table storage engine. Lunar performs a cross-layer design across the database and file system to avoid the pitfalls of multi-layer abstraction while providing SQL-compatible APIs. It employs a type-aware storage layout that considers the access patterns of different data types. Then, Lunar designs a variable-size allocator to reduce fragmentation and optimize RAM and I/O bandwidth usage. Further, considering the limited resources on embedded devices, Lunar employs a modular architecture that enables selecting modules on demand. It also offers optional consistency modes to make a trade-off between resource consumption and consistency. Experiments show that Lunar achieves higher bandwidth utilization, outperforming state-of-the-art approaches while consuming fewer resources.

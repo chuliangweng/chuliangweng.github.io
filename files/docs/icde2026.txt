@@ -1,0 +1,10 @@
+Abstract
+
+Vector approximate nearest neighbor search (ANNS) underpins search engines, recommendation systems, and advertising services. Recent advances of ANNS indexes make CPU a cost-effective choice for serving million-scale, in-memory vector
+search, yet per-core throughput remains constrained by memory-access latency of vectors reading and the compute intensity of distance evaluations in production deployments. With the growing scale of the business and the hardware developing, modern CCD (Core Complex Dies)-based multi-core CPUs have been deployed for high throughput in our services. However, we find that simply increasing core counts does not yield optimal performance scaling.
+
+To improve the efficiency of more cores from the CCD-based architecture, we analyze real-world requests distributions of our production environments. We observe that the high accessing locality of vector search in our online services and low cache
+utilization due to overlooking the multi-chiplet feature of CCD-based CPUs. Hence, we propose a workload-hardware aware thread orchestration framework at CCD-level that (i) provides the uniform interface for both inter-query parallel HNSW search
+and intra-query parallel IVF search; (ii) achieves cache-friendly and workload-adaptive mapping of task dispatching and (iii) runs with the CCD-aware task stealing to address load imbalance.
+
+Applying to real production workloads from search, recommendation and advertising systems of Xiaohongshu (RedNote), our approach delivers up to 3.7× throughput and 30–90% reductions in P50 and P99 latency with the same ANN index implementations. In detail, compared to origin task distributing, the cache miss ratio has been decreased by 6–30%, and the total CPU stall is decreased by 20–80%.

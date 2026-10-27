@@ -1,171 +1,123 @@
-<html><head>
+<!doctype html>
+<html lang="en"><head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
     <title>Chuliang Weng</title>
-    <link href="files/index.css" rel="stylesheet" type="text/css">
+    <link href="files/index.css?v=20261027-3" rel="stylesheet" type="text/css">
   </head>
   <body>
-    <div id="all">
-      <div style="text-align:center">
+    <main id="all">
+      <header class="profile">
         <div id="portrait">
-          <p><img src="files/images/weng.jpg" alt="Chuliang Weng" name="portrait" id="portrait" title="Chuliang Weng"></p>
-          <p>
-            <br>
-          </p>
+          <img src="files/images/weng.jpg" alt="Chuliang Weng" id="portrait-photo">
         </div>
         <div id="contact">
-          <h2>Chuliang WENG<span class="hidden"><br>
-             <img src="files/images/name.jpg" alt="Chuliang Weng" name="portrait31" id="portrait31" title="Chuliang Weng"></h2>
-          <p>
-            Professor<br>
+          <h1>Chuliang WENG<span class="name-local" lang="zh-Hans"><img src="files/images/name.jpg" alt="翁楚良" id="portrait31"></span></h1>
+          <p>Professor<br>
             East China Normal University<br>
-            Shanghai, China, 200062<br>
+            Shanghai, China, 200062
           </p>
-          <p>
-          Email: chuliang DOT weng AT gmail DOT com</p>
-          <p><br> 
-            <!-- make the text look vertically centered --></p>
+          <p>Email: chuliang DOT weng AT gmail DOT com</p>
         </div>
-      </div>
-      <div class="newline">[ <a href="#about">About me</a> | <a href="#publications">Publications</a> | <a href="#Projects">Research</a> | <a href="#misc">Misc</a> ] </div>
+      </header>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="#research">My Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#misc">Misc</a>
+      </nav>
       <a name="about"></a>
-      <div class="resume">
-        <div class="header">About me</div>
-        <div class="content">
-          <p>My research includes Data Processing Systems, Storage Systems, System Virtualization, and Operating Systems. Currently, I am a professor of computer science at <a href="http://www.ecnu.edu.cn">East China Normal University</a> (ECNU). I was an associate professor in the Department of Computer Science and Engineering</a> at <a href="http://www.sjtu.edu.cn">Shanghai Jiao Tong University</a>. I was also a visiting research scientist in the Department of Computer Science</a> at <a href="http://www.columbia.edu">Columbia University</a>, and worked with Professor <a href="http://www.cs.columbia.edu/~junfeng/">Junfeng Yang</a> in the Software Systems Laboratory.</p>
-        </div>
-      </div>
-      <div class="resume">
       <a name="Projects"></a>
-        <div class="header">Recent Research</div>
+      <section class="resume" id="research">
+        <h2 class="header">My Research</h2>
+        <div class="content">
+          <p>I am a Professor of Computer Science at <a href="https://www.ecnu.edu.cn/">East China Normal University</a>. My research focuses on data processing systems across resource-constrained edge devices and cloud platforms, with a growing emphasis on LLM systems and AI for Science.</p>
+          <p>I work across parallel and distributed systems, storage systems, operating systems, and virtualization to address bottlenecks in computation, storage, and data movement. My work combines hardware–software co-design, SIMD/GPU acceleration, and emerging memory and storage architectures to improve system efficiency, scalability, and reliability.</p>
+          <p>My group has published in leading venues including ISCA, OSDI, VLDB, and EMNLP. Some of our research results have been applied in industry. My background in numerical simulation of railway structures and dynamics, together with industrial research in cloud computing and emerging storage technologies, grounds my systems research in the practical needs of science and engineering.</p>
+        </div>
+      </section>
+      <section class="resume" id="publications">
+        <h2 class="header">Selected Publications</h2>
         <div class="content">
           <ul>
-            <li><strong>High Performance Data Processing</strong>. Through leveraging GPU/SIMD/In-Memory technologies, we are working on accelerating data processing with new models and algorithms, for a variety of systems including big data systems, deep learning systems, and high performance computing systems, in order to improve the throughput and/or reduce the response latency. </li>
-            <li><strong>Hybrid Storage System.</strong> Emerging Non-Volatile Memory (NVM) technologies can offer performance within an order of magnitude of DRAM, and make it possible to build new storage systems with NVMs and DRAM. The light-weight storage is a feasible mechanism for leveraging the emerging memory technologies, to achieve a significant performance improvement of data processing.</li>
-            <li><strong>Cloud and System Security</strong>. System performance and system security are usually studied independently, and enforced security methods unavoidably introduce additional overhead, resulting in performance degradation. We study system security and efficiency at the same time, and attempt to establish effective-security methods to improve the cloud security while keeping its performance.
+            <li>Yuchen Huang, Baiteng Ma, Erci Xu, and <strong>Chuliang Weng</strong>. <a href="https://doi.org/10.1109/ISCA66397.2026.00033" class="title"><em>Don't Surrender to Low QPS/$: Fast and Cost-Efficient ANNS with TridentANN</em></a>. <span class="publication-meta"><a href="https://iscaconf.org/isca2026/">The 53rd International Symposium on Computer Architecture (ISCA 2026)</a>, Raleigh, USA, pp. 258–273, 2026</span>
+            </li>
+            <li>Chunlin Yu, Ruiqi Xu, Huan Li, and <strong>Chuliang Weng</strong>. <a href="https://aclanthology.org/2026.findings-emnlp.1532/" class="title"><em>Counterfactual Selective Imitation for Long-Horizon Agents</em></a>. <span class="publication-meta"><a href="https://aclanthology.org/2026.findings-emnlp/">The 2026 Conference on Empirical Methods in Natural Language Processing (EMNLP) Findings</a>, Budapest, Hungary, pp. 32605–32618, 2026</span>
+            </li>
+            <li>Yuchen Huang, Baiteng Ma, Yiping Sun, Yang Shi, Xiao Chen, Xiaocheng Zhong, Zhiyong Wang, Yao Hu, Erci Xu, and <strong>Chuliang Weng</strong>. <a href="https://www.usenix.org/conference/osdi26/presentation/huang-yuchen" class="title"><em>The Clustering Strikes Back: Building Cost-Effective and High-Performance ANNS at Scale with Helmsman</em></a>. <span class="publication-meta"><a href="https://www.usenix.org/conference/osdi26">The 20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2026)</a>, Seattle, WA, USA, pp. 1623–1639, 2026</span>
+            </li>
+            <li>Yuchen Huang, Baiteng Ma, Yiping Sun, Yang Shi, Xiao Chen, Xiaocheng Zhong, Zhiyong Wang, Yao Hu, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2026.txt" class="title"><em>CCD-Level and Load-Aware Thread Orchestration for In-Memory Vector ANNS on Multi-Core CPUs</em></a>. <span class="publication-meta"><a href="https://icde2026.github.io">The 42nd IEEE International Conference on Data Engineering (ICDE 2026)</a>, Montréal, Canada, pp. 3785–3798, 2026</span>
+            </li>
+            <li>Xiaopeng Fan, Xiaoshuang Peng, Kaixin Huang, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/10985788" class="title"><em>HYTE: A Hotness-Aware Hybrid DRAM-PM Native Table Storage Engine</em></a>. <span class="publication-meta"><a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2025, 74(8): 2593–2607</span>
+            </li>
+            <li>Xiaoshuang Peng, Xiaopeng Fan, Shi Cheng, Lingbin Meng, Cuiyun Fu, Wenchao Zhou, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/11112970" class="title"><em>BBS: Batch-Based Snapshot for the Cloud Database Backup</em></a>. <span class="publication-meta"><a href="https://ieee-icde.org/2025/">The 41st IEEE International Conference on Data Engineering (ICDE 2025)</a>, Hong Kong, pp. 4248–4261, 2025</span>
+            </li>
+            <li>Shangwei Wu, Yingtong Xiong, Hui Liang, and <strong>Chuliang Weng</strong>. <a href="https://journal.hep.com.cn/fcs/EN/10.1007/s11704-023-3339-7" class="title"><em>D<sup>2</sup>-GCN: A Graph Convolutional Network with Dynamic Disentanglement for Node Classification</em></a>. <span class="publication-meta"><a href="https://www.springer.com/journal/11704">Frontiers of Computer Science</a>, 2025, 19(1): 191305</span>
+            </li>
+            <li>Yuchen Huang, Xiaopeng Fan, Song Yan, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/10598129/" class="title"><em>Neos: A NVMe-GPUs Direct Vector Service Buffer in User Space</em></a>. <span class="publication-meta"><a href="https://icde2024.github.io/">The 40th IEEE International Conference on Data Engineering (ICDE 2024)</a>, Utrecht, Netherlands, pp. 3767–3781, 2024</span>
+            </li>
+            <li>Yukun Ma, Chunlin Yu, and <strong>Chuliang Weng</strong>. <a href="https://www.sciencedirect.com/science/article/pii/S0167404824002712" class="title"><em>Morpheus: An efficient timing-based attestation framework for safeguarding hypervisor integrity with dynamic trust</em></a>. <span class="publication-meta"><a href="https://www.sciencedirect.com/journal/computers-and-security">Computers & Security</a>, 2024, 144: 103966</span>
+            </li>
+            <li>Xiaopeng Fan, Song Yan, and <strong>Chuliang Weng</strong>. <a href="https://www.sciengine.com/SSI/doi/10.1360/SSI-2022-0415" class="title"><em>Structured Storage for Ubiquitous Operating Systems</em></a>. <span class="publication-meta"><a href="https://www.sciengine.com/SSI/home">SCIENTIA SINICA Informationis</a>, 2024, 54(3): 461-490</span>
+            </li>
+            <li>Xiaopeng Fan, Song Yan, Yuchen Huang, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/10597698/" class="title"><em>TEngine: A Native Distributed Table Storage Engine</em></a>. <span class="publication-meta"><a href="https://icde2024.github.io/">The 40th IEEE International Conference on Data Engineering (ICDE 2024)</a>, Utrecht, Netherlands, pp. 3782–3795, 2024</span>
+            </li>
+            <li>Xiaopeng Fan, Song Yan, Yuchen Huang, and <strong>Chuliang Weng</strong>. <a href="files/docs/lctes2023.pdf" class="title"><em>LUNAR: A Native Table Engine for Embedded Devices</em></a>. <span class="publication-meta"><a href="https://pldi23.sigplan.org/home/LCTES-2023">The 24th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES2023, Co-located with PLDI2023)</a>, Orlando, FL, pp. 122-133, 2023</span>
+            </li>
+            <li>Zewen Sun, Zhifang Li, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2023.pdf" class="title"><em>Co-Utilizing SIMD and Scalar to Accelerate the Data Analytics Workloads</em></a>. <span class="publication-meta"><a href="https://icde2023.ics.uci.edu/">The 39th IEEE International Conference on Data Engineering (ICDE 2023)</a>, Anaheim, CA, pp. 637-649, 2023</span>
+            </li>
+            <li>Jialun Wang, Wenhao Pang, <strong>Chuliang Weng</strong>, and Aoying Zhou. <a href="https://link.springer.com/article/10.1007/s11704-022-2160-z" class="title"><em>D-Cubicle: Boosting Data Transfer Dynamically for Large-scale Analytical Queries in Single-GPU Systems</em></a>. <span class="publication-meta"><a href="https://www.springer.com/journal/11704">Frontiers of Computer Science</a>, 2023, 17(4):174610. DOI: 10.1007/s11704-022-2160-z</span>
+            </li>
+            <li>Shangwei Wu, Yingtong Xiong, and <strong>Chuliang Weng</strong>. <a href="https://link.springer.com/article/10.1007/s11704-023-2483-4" class="title"><em>Dynamic Depth-width Optimization for Capsule Graph Convolutional Network</em></a>. <span class="publication-meta"><a href="https://www.springer.com/journal/11704">Frontiers of Computer Science</a>, 2023, 17(6):176346. DOI: 10.1007/s11704-023-2483-4</span>
+            </li>
+            <li>Zhifang Li, Beicheng Peng, Qiuli Huang, and <strong>Chuliang Weng</strong>. <a href="files/docs/tkde2022.pdf" class="title"><em>Karst: Transactional Data Ingestion without Blocking on a Scalable Architecture</em></a>. <span class="publication-meta"><a href="https://www.computer.org/web/tkde">IEEE Transactions on Knowledge and Data Engineering</a>, 2022, 34(5):2241-2253</span>
+            </li>
+            <li>Jianan Gu, Yukun Ma, Beilei Zheng, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/9514403" class="title"><em>Outlier: Enabling Effective Measurement of Hypervisor Code Integrity with Group Detection</em></a>. <span class="publication-meta"><a href="https://www.computer.org/web/tdsc">IEEE Transactions on Dependable and Secure Computing</a>, 2022, 19(6): 3686–3698</span>
+            </li>
+            <li>Beilei Zheng, Jianan Gu, Jialun Wang, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/9457125" class="title"><em>CBA-Detector: A Self-Feedback Detector against Cache-Based Attacks</em></a>. <span class="publication-meta"><a href="https://www.computer.org/web/tdsc">IEEE Transactions on Dependable and Secure Computing</a>, 2022, 19(5): 3231–3243</span>
+            </li>
+            <li>Zhifang Li, Mingcong Han, Shangwei Wu, and <strong>Chuliang Weng</strong>. <a href="files/docs/ppopp2021-shadowvm.pdf" class="title"><em>ShadowVM: Accelerating Data Plane for Data Analytics with Bare Metal CPUs and GPUs</em></a> [<a href="files/docs/ppopp2021-shadowvm-slides.pdf" class="title"><em>slides</em></a>]. <span class="publication-meta"><a href="https://ppopp21.sigplan.org">The 26th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming (PPoPP'21)</a>, Korea, pp. 147-160, 2021</span>
+            </li>
+            <li>Zeyu He, Zhifang Li, Xiaoshuang Peng, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/9458916/" class="title"><em>DS<sup>2</sup>: Handling Data Skew Using Data Stealings over High-Speed Networks</em></a>. <span class="publication-meta"><a href="https://icde2021.gr">The 37th IEEE International Conference on Data Engineering (ICDE)</a>, pp. 1865–1870, 2021</span>
+            </li>
+            <li>Zhifang Li, Beicheng Peng, and <strong>Chuliang Weng</strong>. <a href="files/docs/tc2020.pdf" class="title"><em>XeFlow: Streamlining Inter-processor Pipeline Execution for the Discrete CPU-GPU Platform</em></a>. <span class="publication-meta"><a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2020, 69(6):819-831</span>
+            </li>
+            <li>Zhuhe Fang, Beilei Zheng, and <strong>Chuliang Weng</strong>. <a href="https://www.vldb.org/pvldb/vol13/p226-fang.pdf" class="title"><em>Interleaved MultiVectorizing</em></a>. <span class="publication-meta"><a href="https://vldb2020.org/">The 46th International Conference on Very Large Data Bases (VLDB2020)</a>, Proceedings of the VLDB Endowment, 2019, 13(3):226-238</span>
+            </li>
+            <li>Jiajia Chu, Yunshan Tu, Yao Zhang, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2020.pdf" class="title"><em>LATTE: A Native Table Engine on NVMe Storage</em></a> [<a href="files/docs/icde2020_slides.pdf" class="title"><em>slides</em></a>]. <span class="publication-meta"><a href="https://www.utdallas.edu/icde/">The 36th IEEE International Conference on Data Engineering (ICDE)</a>, Dallas, Texas, USA, pp. 1225-1236, 2020</span>
+            </li>
+            <li>Zhuhe Fang, <strong>Chuliang Weng</strong>, Li Wang, Huiqi Hu, and Aoying Zhou. <a href="files/docs/tkde2020.pdf" class="title"><em>Scheduling Resources to Multiple Pipelines of One Query in a Main Memory Database Cluster</em></a>. <span class="publication-meta"><a href="https://www.computer.org/web/tkde">IEEE Transactions on Knowledge and Data Engineering</a>, [<a href="https://github.com/daseECNU/Ginkgo">code</a>], 2020, 32(3): 533-546</span>
+            </li>
+            <li>Zhuhe Fang, <strong>Chuliang Weng</strong>, Li Wang, and Aoying Zhou. <a href="https://ieeexplore.ieee.org/document/8509344/" class="title"><em>Parallelizing Multiple Pipelines of One Query in a Main Memory Database Cluster</em></a>. <span class="publication-meta"><a href="https://icde2018.org/">The 34th IEEE International Conference on Data Engineering (ICDE)</a>, pp. 1252–1255, 2018</span>
+            </li>
+            <li>Jianguo Chen, Kenli Li, Zhuo Tang, Kashif Bilal, Shui Yu, <strong>Chuliang Weng</strong>, Keqin Li. <a href="http://doi.ieeecomputersociety.org/10.1109/TPDS.2016.2603511" class="title"><em>A Parallel Random Forest Algorithm for Big Data in a Spark Cloud Computing Environment</em></a>. <span class="publication-meta"><a href="https://www.computer.org/web/tpds">IEEE Transactions on Parallel &amp; Distributed Systems</a>, 2017, 28(4): 919-933</span>
+            </li>
+            <li><strong>Chuliang Weng</strong>, Qian Liu, Kenli Li, Deqing Zou. <a href="http://doi.ieeecomputersociety.org/10.1109/TC.2016.2560809" class="title"><em>CloudMon: Monitoring Virtual Machines in Clouds</em></a>. <span class="publication-meta"><a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2016, 65(12): 3787-3794</span>
+            </li>
+            <li><strong>Chuliang Weng</strong>, Minyi Guo, Yuan Luo, and Minglu Li. <a href="files/docs/tc-cosch.pdf" class="title">Hybrid CPU Management for Adapting to the Diversity of Virtual Machines</a>. <span class="publication-meta"><a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2013, 62(7): 1332-1344</span>
+            </li>
+            <li>Jianfeng Zhan, Lei Wang, Xiaona Li, Weisong Shi, <strong>Chuliang Weng</strong>, Wenyao Zhang, Xiutao Zang. <a href="files/docs/tc-costaware.pdf" class="title">Cost-aware Cooperative Resource Provisioning for Heterogeneous Workloads in Data Centers</a>. <span class="publication-meta"><a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2013, 62(11): 2155-2168</span>
+            </li>
+            <li><strong>Chuliang Weng</strong>, Qian Liu, Lei Yu, Minglu Li. <a href="files/docs/hpdc2011.pdf" class="title">Dynamic Adaptive Scheduling for Virtual Machines</a>. <span class="publication-meta"><a href="http://www.hpdc.org/2011/">The 20th International ACM Symposium on High-Performance Parallel and Distributed Computing (HPDC)</a>. San Jose, California, USA, pp. 239-250, 2011</span>
+            </li>
+            <li> Lei Yu, <strong>Chuliang Weng</strong>, Minglu Li, and Yuan Luo. <a href="files/docs/network2011.pdf" class="title">SNPdisk: An Efficient Para-virtualization Snapshot Mechanism for Virtual Disks in Private Clouds</a>. <span class="publication-meta"><a href="http://www.comsoc.org/netmag">IEEE Network</a>, 2011, 25(4): 20-26</span>
+            </li>
+            <li>Qian Liu, <strong>Chuliang Weng</strong>, Minglu Li, and Yuan Luo. <a href="https://doi.org/10.1109/MSP.2010.143" class="title">An In-VM Measuring Framework for Increasing Virtual Machine Security in Clouds</a>. <span class="publication-meta"><a href="https://www.computer.org/security-and-privacy/">IEEE Security &amp; Privacy</a>, 2010, 8(6): 56-62</span>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="resume">
-      <a name="publications"></a>
-        <div class="header">Select Publications</div>
+      </section>
+      <section class="resume" id="misc">
+        <h2 class="header">Misc</h2>
         <div class="content">
           <ul>
-            <li>Yuchen Huang, Baiteng Ma, Erci Xu, and <strong>Chuliang Weng</strong>. <a href="files/docs/isca2026.txt" class="title"><em>Don't Surrender to Low QPS/$: Fast and Cost-Efficient ANNS with  TridentANN</em></a>. <a href="https://iscaconf.org/isca2026/">The 53rd International Symposium on Computer Architecture (ISCA 2026)</a>, Raleigh, USA, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Yuchen Huang, Baiteng Ma, Yiping Sun, Yang Shi, Xiao Chen, Xiaocheng Zhong, Zhiyong Wang, Yao Hu, Erci Xu, and <strong>Chuliang Weng</strong>. <a href="files/docs/osdi2026.txt" class="title"><em>The Clustering Strikes Back: Building Cost-Effective and  High-Performance ANNS at Scale with Helmsman</em></a>. <a href="https://www.usenix.org/conference/osdi26">The 20th USENIX Symposium on Operating Systems Design and Implementation (OSDI 2026)</a>, Seattle, WA, USA, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Yuchen Huang, Baiteng Ma, Yiping Sun, Yang Shi, Xiao Chen, Xiaocheng Zhong, Zhiyong Wang, Yao Hu, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2026.txt" class="title"><em>CCD-Level and Load-Aware Thread Orchestration for In-Memory Vector ANNS on Multi-Core CPUs</em></a>. <a href="https://icde2026.github.io">The 42th IEEE International Conference on Data Engineering (ICDE 2026)</a>, Montréal, Canada, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Xiaopeng Fan, Xiaoshuang Peng, Kaixin Huang, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/10985788" class="title"><em>HYTE: A Hotness-Aware Hybrid DRAM-PM Native Table Storage Engine</em></a>. <a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2025, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Xiaoshuang Peng, Xiaopeng Fan, Shi Cheng, Lingbin Meng, Cuiyun Fu, Wenchao Zhou, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/11112970" class="title"><em>BBS: Batch-Based Snapshot for the Cloud Database Backup</em></a>. <a href="https://ieee-icde.org/2025/">The 41th IEEE International Conference on Data Engineering (ICDE 2025)</a>, Hong Kong, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Yuchen Huang, Xiaopeng Fan, Song Yan, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2024-2.txt" class="title"><em>Neos: A NVMe-GPUs Direct Vector Service Buffer in User Space</em></a>. <a href="https://icde2024.github.io/">The 40th IEEE International Conference on Data Engineering (ICDE 2024)</a>, Utrecht, Netherlands, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Yukun Ma, Chunlin Yu, and <strong>Chuliang Weng</strong>. <a href="https://www.sciencedirect.com/science/article/pii/S0167404824002712" class="title"><em>Morpheus: An efficient timing-based attestation framework for safeguarding hypervisor integrity with dynamic trust</em></a>. <a href="https://www.sciencedirect.com/journal/computers-and-security">Computers & Security</a>, 2024, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Xiaopeng Fan, Song Yan, and <strong>Chuliang Weng</strong>. <a href="https://www.sciengine.com/SSI/doi/10.1360/SSI-2022-0415" class="title"><em>Structured Storage for Ubiquitous Operating Systems</em></a>. <a href="https://www.sciengine.com/SSI/home">SCIENTIA SINICA Informationis</a>, 2024, 54(3): 461-490<br>
-              <div class="description"></div>
-            </li>
-            <li>Xiaopeng Fan, Song Yan, Yuchen Huang, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2024.txt" class="title"><em>TEngine: A Native Distributed Table Storage Engine</em></a>. <a href="https://icde2024.github.io/">The 40th IEEE International Conference on Data Engineering (ICDE 2024)</a>, Utrecht, Netherlands, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Shangwei Wu, Yingtong Xiong, Hui Liang, and <strong>Chuliang Weng</strong>. <a href="https://journal.hep.com.cn/fcs/EN/10.1007/s11704-023-3339-7" class="title"><em>D^2-GCN: A Graph Convolutional Network with Dynamic Disentanglement for Node Classification</em></a>. <a href="https://www.springer.com/journal/11704">Frontiers of Computer Science</a>, 2023, Full Paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Xiaopeng Fan, Song Yan, Yuchen Huang, and <strong>Chuliang Weng</strong>. <a href="files/docs/lctes2023.pdf" class="title"><em>LUNAR: A Native Table Engine for Embedded Devices</em></a>. <a href="https://pldi23.sigplan.org/home/LCTES-2023">The 24th ACM SIGPLAN/SIGBED International Conference on Languages, Compilers, and Tools for Embedded Systems (LCTES2023, Co-located with PLDI2023)</a>, Orlando, FL, pp. 122-133, 2023<br>
-              <div class="description"></div>
-            </li>
-            <li>Zewen Sun, Zhifang Li, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2023.pdf" class="title"><em>Co-Utilizing SIMD and Scalar to Accelerate the Data Analytics Workloads</em></a>. <a href="https://icde2023.ics.uci.edu/">The 39th IEEE International Conference on Data Engineering (ICDE 2023)</a>, Anaheim, CA, pp. 637-649, 2023<br>
-              <div class="description"></div>
-            </li>
-            <li>Jialun Wang, Wenhao Pang, <strong>Chuliang Weng</strong>, and Aoying Zhou. <a href="https://link.springer.com/article/10.1007/s11704-022-2160-z" class="title"><em>D-Cubicle: Boosting Data Transfer Dynamically for Large-scale Analytical Queries in Single-GPU Systems</em></a>. <a href="https://www.springer.com/journal/11704">Frontiers of Computer Science</a>, 2023, 17(4):174610. DOI: 10.1007/s11704-022-2160-z<br>
-              <div class="description"></div>
-            </li>
-            <li>Shangwei Wu, Yingtong Xiong, and <strong>Chuliang Weng</strong>. <a href="https://link.springer.com/article/10.1007/s11704-023-2483-4" class="title"><em>Dynamic Depth-width Optimization for Capsule Graph Convolutional Network</em></a>. <a href="https://www.springer.com/journal/11704">Frontiers of Computer Science</a>, 2023, 17(6):176346. DOI: 10.1007/s11704-023-2483-4<br>
-              <div class="description"></div>
-            </li>
-            <li>Zhifang Li, Beicheng Peng, Qiuli Huang, and <strong>Chuliang Weng</strong>. <a href="files/docs/tkde2022.pdf" class="title"><em>Karst: Transactional Data Ingestion without Blocking on a Scalable Architecture</em></a>. <a href="https://www.computer.org/web/tkde">IEEE Transactions on Knowledge and Data Engineering</a>, 2022, 34(5):2241-2253<br>
-              <div class="description"></div>
-            </li>
-            <li>Jianan Gu, Yukun Ma, Beilei Zheng, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/9514403" class="title"><em>Outlier: Enabling Effective Measurement of Hypervisor Code Integrity with Group Detection</em></a>. <a href="https://www.computer.org/web/tdsc">IEEE Transactions on Dependable and Secure Computing</a>, 2021, Regular paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Zhifang Li, Mingcong Han, Shangwei Wu, and <strong>Chuliang Weng</strong>. <a href="files/docs/ppopp2021-shadowvm.pdf" class="title"><em>ShadowVM: Accelerating Data Plane for Data Analytics with Bare Metal CPUs and GPUs</em></a> [<a href="files/docs/ppopp2021-shadowvm-slides.pdf" class="title"><em>slides</em></a>]. <a href="https://ppopp21.sigplan.org">The 26th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming (PPoPP'21)</a>, Korea, pp. 147-160, 2021<br>
-              <div class="description"></div>
-            </li>
-            <li>Beilei Zheng, Jianan Gu, Jialun Wang, and <strong>Chuliang Weng</strong>. <a href="https://ieeexplore.ieee.org/document/9457125" class="title"><em>CBA-Detector: A Self-Feedback Detector against Cache-Based Attacks</em></a>. <a href="https://www.computer.org/web/tdsc">IEEE Transactions on Dependable and Secure Computing</a>, 2021, Regular paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Zeyu He, Zhifang Li, Xiaoshuang Peng, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2021-abstract.txt" class="title"><em>DS^2: Handling Data Skew in Spark SQL Using Data Stealing over High-Speed Networks</em></a>. <a href="https://icde2021.gr">The 37th IEEE International Conference on Data Engineering (ICDE)</a>, 2021, Short paper, Accepted<br>
-              <div class="description"></div>
-            </li>
-            <li>Zhifang Li, Beicheng Peng, and <strong>Chuliang Weng</strong>. <a href="files/docs/tc2020.pdf" class="title"><em>XeFlow: Streamlining Inter-processor Pipeline Execution for the Discrete CPU-GPU Platform</em></a>. <a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2020, 69(6):819-831<br>
-              <div class="description"></div>
-            </li>
-            <li>Zhuhe Fang, Beilei Zheng, and <strong>Chuliang Weng</strong>. <a href="https://www.vldb.org/pvldb/vol13/p226-fang.pdf" class="title"><em>Interleaved MultiVectorizing</em></a>. <a href="https://vldb2020.org/">The 46th International Conference on Very Large Data Bases (VLDB2020)</a>, Proceedings of the VLDB Endowment, 2019, 13(3):226-238<br>
-              <div class="description"></div>
-            </li>
-            <li>Jiajia Chu, Yunshan Tu, Yao Zhang, and <strong>Chuliang Weng</strong>. <a href="files/docs/icde2020.pdf" class="title"><em>LATTE: A Native Table Engine on NVMe Storage</em></a> [<a href="files/docs/icde2020_slides.pdf" class="title"><em>slides</em></a>]. <a href="https://www.utdallas.edu/icde/">The 36th IEEE International Conference on Data Engineering (ICDE)</a>, Dallas, Texas, USA, pp. 1225-1236, 2020<br> 
-              <div class="description"></div>
-            </li>
-            <li>Zhuhe Fang, <strong>Chuliang Weng</strong>, Li Wang, Huiqi Hu, and Aoying Zhou. <a href="files/docs/tkde2020.pdf" class="title"><em>Scheduling Resources to Multiple Pipelines of One Query in a Main Memory Database Cluster</em></a>. <a href="https://www.computer.org/web/tkde">IEEE Transactions on Knowledge and Data Engineering</a>, [<a href="https://github.com/daseECNU/Ginkgo">code</a>], 2020, 32(3): 533-546<br>
-              <div class="description"></div>
-            </li>
-            <li>Zhuhe Fang, <strong>Chuliang Weng</strong>, Li Wang, and Aoying Zhou. <a href="https://icde2018.org/" class="title"><em>Parallelizing Multiple Pipelines of One Query in a Main Memory Database Cluster</em></a>. <a href="https://icde2018.org/">The 34th IEEE International Conference on Data Engineering (ICDE)</a>, 2018, Short paper<br>
-              <div class="description"></div>
-            </li>
-            <li>Jianguo Chen, Kenli Li, Zhuo Tang, Kashif Bilal, Shui Yu, <strong>Chuliang Weng</strong>, Keqin Li. <a href="http://doi.ieeecomputersociety.org/10.1109/TPDS.2016.2603511" class="title"><em>A Parallel Random Forest Algorithm for Big Data in a Spark Cloud Computing Environment</em></a>. <a href="https://www.computer.org/web/tpds">IEEE Transactions on Parallel &amp; Distributed Systems</a>, 2017, 28(4): 919-933<br>
-              <div class="description"></div>
-            </li>
-            <li><strong>Chuliang Weng</strong>, Qian Liu, Kenli Li, Deqing Zou. <a href="http://doi.ieeecomputersociety.org/10.1109/TC.2016.2560809" class="title"><em>CloudMon: Monitoring Virtual Machines in Clouds</em></a>. <a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2016, 65(12): 3787-3794<br>
-              <div class="description"></div>
-            </li>
-            <li><strong>Chuliang Weng</strong>, Minyi Guo, Yuan Luo, and Minglu Li. <a href="files/docs/tc-cosch.pdf" class="title">Hybrid CPU Management for Adapting to the Diversity of Virtual Machines</a>. <a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2013, 62(7): 1332-1344<br>
-              <div class="description"></div>
-            </li>
-            <li>Jianfeng Zhan, Lei Wang, Xiaona Li, Weisong Shi, <strong>Chuliang Weng</strong>, Wenyao Zhang, Xiutao Zang. <a href="files/docs/tc-costaware.pdf" class="title">Cost-aware Cooperative Resource Provisioning for Heterogeneous Workloads in Data Centers</a>. <a href="https://www.computer.org/web/tc">IEEE Transactions on Computers</a>, 2013, 62(11): 2155-2168<br>
-              <div class="description"></div>
-            </li>
-            <li><strong>Chuliang Weng</strong>, Qian Liu, Lei Yu, Minglu Li. <a href="files/docs/hpdc2011.pdf" class="title">Dynamic Adaptive Scheduling for Virtual Machines</a>. <a href="http://www.hpdc.org/2011/">The 20th International ACM Symposium on High-Performance Parallel and Distributed Computing (HPDC)</a>. San Jose, California, USA, pp. 239-250, 2011<br>
-              <div class="description"></div>
-            </li>
-            <li> Lei Yu, <strong>Chuliang Weng</strong>, Minglu Li, and Yuan Luo. <a href="files/docs/network2011.pdf" class="title">SNPdisk: An Efficient Para-virtualization Snapshot Mechanism for Virtual Disks in Private Clouds</a>. <a href="http://www.comsoc.org/netmag">IEEE Network</a>, 2011, 25(4): 20-26<br>
-              <div class="description"></div>
-            </li>
-            <li>Qian Liu, <strong>Chuliang Weng</strong>, Minglu Li, and Yuan Luo. <a href="files/docs/sp2010.pdf" class="title">An In-VM Measuring Framework for Increasing Virtual Machine Security in Clouds</a>. <a href="https://www.computer.org/security-and-privacy/">IEEE Security &amp; Privacy</a>, 2010, 8(6): 56-62<br>
-              <div class="description"></div>
-            </li>
-              <div class="description"></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="resume">
-      <a name="misc"></a>
-        <div class="header">Misc</div>
-        <div class="content">
-          <ul>
-            <li>PC Member: OSDI2027, ICDE2027.</li>
-          </ul>
-          <ul>
+            <li>Program Committee Member: <a href="https://www.usenix.org/conference/osdi27">OSDI 2027</a>, <a href="https://icde2027.github.io/pc-chairs.html">ICDE 2027</a>.</li>
             <li><a href="https://faculty.ecnu.edu.cn/_s37/wcl2/main.psp" class="title">My Chinese Official Homepage</a> at <a href="http://www.ecnu.edu.cn/">ECNU</a>.</li>
           </ul>
         </div>
-      </div>
-      <div class="newline"></div>
-    </div>
+      </section>
+    </main>
   
 
 </body></html>

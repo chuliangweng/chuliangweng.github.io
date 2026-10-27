@@ -52,12 +52,12 @@ body {
 }
 #contact h1 {
     margin: 0;
-    font-size: 26px;
+    font-size: 20px;
     line-height: 1.25;
     color: var(--heading);
 }
 .name-local { display: block; margin-top: 5px; }
-#portrait31 { display: block; width: 112px; height: auto; }
+#portrait31 { display: block; width: 76px; height: auto; }
 #contact p { margin: 12px 0 0; }
 .site-nav {
     display: flex;
@@ -123,5 +123,6 @@ img { max-width: 100%; border: 0; }
 }
 @media (max-width: 380px) {
     #all { padding: 24px 20px 28px; }
-    #contact h1 { font-size: 24px; }
+    #contact h1 { font-size: 19px; }
+    #portrait31 { width: 72px; }
 }

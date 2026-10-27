@@ -37,7 +37,7 @@ body {
     gap: 24px 32px;
     margin-bottom: 24px;
 }
-#portrait { flex: 0 0 160px; }
+#portrait { flex: 0 0 140px; }
 #portrait-photo {
     display: block;
     width: 100%;
@@ -109,13 +109,13 @@ img { max-width: 100%; border: 0; }
 @media (max-width: 720px) {
     #all { padding: 32px 28px; }
     .profile { gap: 20px 24px; }
-    #portrait { flex-basis: 128px; }
+    #portrait { flex-basis: 112px; }
 }
 @media (max-width: 600px) {
     body { padding: 0; }
     #all { padding: 28px 24px 32px; box-shadow: none; }
     .profile { justify-content: flex-start; gap: 20px 24px; }
-    #portrait { flex-basis: 128px; }
+    #portrait { flex-basis: 112px; }
     .site-nav { gap: 8px 18px; }
     .header { font-size: 19px; }
     ul { padding-left: 20px; }

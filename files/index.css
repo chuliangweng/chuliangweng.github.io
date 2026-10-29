@@ -1,7 +1,7 @@
 /* A restrained, responsive academic homepage. */
 :root {
-    --page-background: #F4F6F8;
-    --surface: #FFFFFF;
+    --page-background: #EEF1F4;
+    --surface: #F8F9FA;
     --heading: #17324D;
     --text: #24292F;
     --link: #245B83;
@@ -57,7 +57,7 @@ body {
     color: var(--heading);
 }
 .name-local { display: block; margin-top: 5px; }
-#portrait31 { display: block; width: 76px; height: auto; }
+#portrait31 { display: block; width: 76px; height: auto; mix-blend-mode: multiply; }
 #contact p { margin: 12px 0 0; }
 .site-nav {
     display: flex;

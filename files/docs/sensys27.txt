@@ -1,28 +1,7 @@
 Abstract
 
-Model compression techniques such as pruning and quantization are widely used to
-deploy neural networks on resource-constrained edge devices. These techniques
-produce sparse weight matrices that demand efficient storage formats to minimize
-memory footprint and data traffic during inference. Existing sparse formats
-optimize the layout of non-zero elements but treat each non-zero independently,
-incurring redundant loads of the same dense operand when multiple rows access
-overlapping columns. We observe that pruned weight matrices exhibit significant
-column index sharing across rows—at 50% sparsity, nearly half of all rows share
-over 50% of their column indices—a property that existing approaches fail to
-exploit.
+Model compression techniques such as pruning and quantization are widely used to deploy neural networks on resource-constrained edge devices. These techniques produce sparse weight matrices that demand efficient storage formats to minimize memory footprint and data traffic during inference. Existing sparse formats optimize the layout of non-zero elements but treat each non-zero independently, incurring redundant loads of the same dense operand when multiple rows access overlapping columns. We observe that pruned weight matrices exhibit significant column index sharing across rows—at 50% sparsity, nearly half of all rows share over 50% of their column indices—a property that existing approaches fail to exploit.
 
-Motivated by this observation, we propose SparClus, a sparse matrix storage
-format that clusters rows with similar column index distributions and stores
-shared column indices once per cluster. This design reduces metadata storage
-over state-of-the-art sparse formats and enables the dense operand to be loaded
-once and reused across all cluster rows via vector registers, converting
-unpredictable gather operations into regular streaming loads. We further design
-SparClus-V, a suite of vectorized sparse kernels built on a row-based dataflow
-that maximizes register reuse on vector architectures, targeting the RISC-V
-Vector Extension, along with a tiling strategy for large inner dimensions (K)
-where the dense operand exceeds on-chip cache capacity.
+Motivated by this observation, we propose SparClus, a sparse matrix storage format that clusters rows with similar column index distributions and stores shared column indices once per cluster. This design reduces metadata storage over state-of-the-art sparse formats and enables the dense operand to be loaded once and reused across all cluster rows via vector registers, converting unpredictable gather operations into regular streaming loads. We further design SparClus-V, a suite of vectorized sparse kernels built on a row-based dataflow that maximizes register reuse on vector architectures, targeting the RISC-V Vector Extension, along with a tiling strategy for large inner dimensions (K) where the dense operand exceeds on-chip cache capacity.
 
-Evaluations on a commodity RISC-V platform show that Tiled SparClus outperforms
-dense baselines by up to 3.9× and state-of-the-art sparse kernels by up to 2.3×
-across layer shapes derived from LLaMA-7B and Mistral-7B, with last-level cache
-misses reduced to 3% of existing sparse methods on large matrices.
+Evaluations on a commodity RISC-V platform show that Tiled SparClus outperforms dense baselines by up to 3.9× and state-of-the-art sparse kernels by up to 2.3× across layer shapes derived from LLaMA-7B and Mistral-7B, with last-level cache misses reduced to 3% of existing sparse methods on large matrices.
